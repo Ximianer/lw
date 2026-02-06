@@ -1,0 +1,43 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Lightwave'
+theme = 'mana'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[params]
+  description = "A basic Hugo site using the Mana theme."
+  author = "Lightwave Team"
+  heroTitleLine1 = "LIGHTWAVE"
+  heroTitleLine2 = "A Basic Hugo Site"
+  
+  [params.social]
+    github = "https://github.com/example"
+    email = "team@example.org"
+
+  [params.avatar]
+    url = "https://example.com/avatar.jpg"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[[menus.main]]
+  name = 'Home'
+  pageRef = '/'
+  weight = 10
+
+[[menus.main]]
+  name = 'Posts'
+  pageRef = '/posts'
+  weight = 20
