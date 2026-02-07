@@ -11,7 +11,7 @@ theme = 'mana'
   description = "A basic Hugo site using the Mana theme."
   author = "LIGHTWAVE"
   heroTitleLine1 = "LIGHTWAVE"
-  heroTitleLine2 = "A Basic Hugo Site"
+  heroTitleLine2 = "A Great Hugo Site"
   
   [params.social]
     github = "https://github.com/example"
