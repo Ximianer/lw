@@ -2,6 +2,9 @@
     class="landing-section preset-{{ .Params.preset | default " default" }}"
     style="{{ with .Params.bg_color }}background-color: {{ . }};{{ end }} {{ with .Params.text_color }}color: {{ . }};{{ end }}">
     <div class="container fade-in">
+        {{ with .Params.logo }}
+        <img src="{{ . | relURL }}" class="hero-logo" alt="{{ $.Title }}" width="700">
+        {{ end }}
         {{ .Content }}
     </div>
 </section>

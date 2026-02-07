@@ -1,5 +1,5 @@
-baseURL = 'http://localhost:1313/'
-languageCode = 'en-us'
+baseURL = 'https://sesceu.github.io/lw/'
+languageCode = 'de-de'
 title = 'Lightwave'
 theme = 'lightwave'
 
@@ -10,15 +10,6 @@ theme = 'lightwave'
 [params]
   description = "A premium Hugo site for Lightwave Music & Event Company."
   author = "Lightwave Team"
-  heroTitleLine1 = "LIGHTWAVE"
-  heroTitleLine2 = "A Basic Hugo Site"
-  
-  [params.social]
-    github = "https://github.com/example"
-    email = "team@example.org"
-
-  [params.avatar]
-    url = "https://example.com/avatar.jpg"
 
 [markup]
   [markup.goldmark]
