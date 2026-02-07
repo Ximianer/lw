@@ -9,7 +9,7 @@ theme = 'mana'
 
 [params]
   description = "A basic Hugo site using the Mana theme."
-  author = "Lightwave Team"
+  author = "LIGHTWAVE"
   heroTitleLine1 = "LIGHTWAVE"
   heroTitleLine2 = "A Basic Hugo Site"
   
