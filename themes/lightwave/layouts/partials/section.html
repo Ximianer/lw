@@ -1,4 +1,5 @@
-<section id="{{ .File.TranslationBaseName }}" class="landing-section preset-{{ .Params.preset | default " default" }}"
+<section id="{{ .Params.anchor | default .File.TranslationBaseName }}"
+    class="landing-section preset-{{ .Params.preset | default " default" }}"
     style="{{ with .Params.bg_color }}background-color: {{ . }};{{ end }} {{ with .Params.text_color }}color: {{ . }};{{ end }}">
     <div class="container fade-in">
         {{ .Content }}

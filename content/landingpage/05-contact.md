@@ -3,6 +3,7 @@ title: "Get in Touch"
 weight: 5
 preset: "contact"
 bg_image: "img/contact_vibe.png"
+anchor: "contact"
 ---
 
 ## Ready to <span class="text-accent-purple">Light Up</span> the Night?

@@ -3,6 +3,7 @@ title: "Our Services"
 weight: 3
 preset: "services"
 bg_image: "img/services_vibe.png"
+anchor: "services"
 ---
 
 ## Elevate Your <span class="text-accent-blue">Event</span>

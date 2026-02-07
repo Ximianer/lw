@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --bg-light: #fdfdfd;
     --bg-alt: #f1f3f5;
@@ -6,13 +10,25 @@
     --accent-purple: #c56cf0;
     --accent-cyan: #32ff7e;
     --accent-gold: #ff9f43;
-    --accent-blue: #70a1ff;
+    --accent-blue: rgba(0, 180, 204, 1);
+    --accent-blue2: #70a1ff;
     --glass-bg: rgba(255, 255, 255, 0.7);
     --glass-border: rgba(255, 255, 255, 0.2);
     --container-max-width: 1200px;
     --font-primary: 'Inter', sans-serif;
     --font-heading: 'Outfit', sans-serif;
     --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    /* Hero Gradient Colors */
+    --hero-grad-1a: rgba(0, 180, 204, 0.10);
+    --hero-grad-2a: rgba(216, 241, 230, 0.2);
+    --hero-grad-1b: #c46cf033;
+    --hero-grad-2b: rgba(233, 226, 226, 0.28);
+
+    /* Wave Animation Colors */
+    --wave-stop-1: var(--accent-purple);
+    --wave-stop-2: var(--accent-blue);
+    --wave-opacity: 0.8;
 }
 
 * {
@@ -117,7 +133,6 @@ h4 {
     }
 }
 
-.preset-services,
 #latest-posts {
     background: transparent !important;
 }
@@ -218,12 +233,13 @@ section {
 
 /* Presets */
 .preset-hero {
+    padding-top: 7.5rem;
     text-align: center;
-    background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0%, rgba(233, 226, 226, 0.28) 90.1%);
+    background: radial-gradient(circle at 10% 20%, var(--hero-grad-1a) 0%, var(--hero-grad-1b) 90.1%);
 }
 
 .hero-logo {
-    max-width: 180px;
+    max-width: 800px;
     height: auto;
     margin-bottom: 3rem;
     filter: drop-shadow(0 0 20px rgba(197, 108, 240, 0.3));
@@ -293,6 +309,9 @@ section {
 
 .preset-services {
     /* Background handled by global animation */
+    /* background: radial-gradient(circle at 10% 20%, var(--hero-grad-1a) 0%, var(--hero-grad-1b) 90.1%); */
+    background: var(--glass-bg);
+    /* backdrop-filter: blur(2px); */
 }
 
 .preset-services h2 {
