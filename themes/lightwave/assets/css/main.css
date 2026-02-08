@@ -5,6 +5,7 @@ html {
 :root {
     --bg-light: #fdfdfd;
     --bg-alt: #f1f3f5;
+    --bg-alt-trans: #f1f3f5cc;
     --text-dark: #444444;
     --text-muted: #636e72;
     --accent-purple: #c56cf0;
@@ -672,14 +673,14 @@ section {
 }
 
 .blog-card {
-    background: var(--bg-alt);
+    background: var(--bg-alt-trans);
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.3s;
 }
 
 .blog-card:hover {
-    background: #fff;
+    background: #fffc;
     box-shadow: var(--shadow-soft);
     transform: translateY(-5px);
 }
@@ -930,7 +931,7 @@ section {
 
 /* Individual Package Cards */
 .preset-packages .container>ul>li {
-    background: var(--bg-alt);
+    background: var(--bg-alt-trans);
     border-radius: 20px;
     padding: 3rem;
     display: flex;
@@ -942,7 +943,7 @@ section {
 }
 
 .preset-packages .container>ul>li:hover {
-    background: #fff;
+    background: #fffc;
     transform: translateY(-5px);
     box-shadow: var(--shadow-soft);
     border-color: var(--accent-purple);
@@ -956,13 +957,13 @@ section {
 }
 
 .preset-packages .container>ul>li:nth-child(2)::before {
-    content: 'BELIEBTESTEN';
+    content: ' AM BELIEBTESTEN';
     position: absolute;
-    top: 20px;
-    right: -35px;
+    top: 30px;
+    right: -45px;
     background: var(--accent-purple);
     color: white;
-    padding: 5px 40px;
+    padding: 10px 40px;
     font-size: 0.75rem;
     font-weight: 700;
     transform: rotate(45deg);

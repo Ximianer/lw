@@ -13,7 +13,7 @@ Wähle das perfekte Setup für dein Event. Unsere Pakete sind als Orientierung g
   - Hochwertiges 2.1 Soundsystem
   - Basic Lichteffekt für die Tanzfläche
   - Inkl. Auf- und Abbau
-  **Preis: ab 590€**
+  - **Preis: ab 590€**
 - ### Premium
   **Das Rundum-sorglos-Paket für Club-Feeling**
   - Professioneller DJ (Open End Option)
@@ -21,7 +21,7 @@ Wähle das perfekte Setup für dein Event. Unsere Pakete sind als Orientierung g
   - 4 computergesteuerte Moving Heads
   - **Inkl. Lichttechniker** für Live-Show
   - Ambiente-Beleuchtung (Up-Lighting)
-  **Preis: ab 950€**
+  - **Preis: ab 950€**
 - ### Ultimate
   **Maximale Licht-Power & Individualität**
   - Alles aus Premium
@@ -29,6 +29,6 @@ Wähle das perfekte Setup für dein Event. Unsere Pakete sind als Orientierung g
   - Große Licht-Traverse (Truss)
   - Individuelles Licht-Konzept & Musik-Vorauswahl
   - Fotobox-Option inkl.
-  **Preis: auf Anfrage**
+  - **Preis: auf Anfrage**
 
 Wir beraten dich gerne persönlich, um das ideale Paket für deine Location und Gästezahl zusammenzustellen.
