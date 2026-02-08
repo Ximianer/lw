@@ -907,3 +907,129 @@ section {
 .post-content li {
     margin-bottom: 0.8rem;
 }
+/* Packages Preset */
+.preset-packages .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: stretch;
+}
+
+.preset-packages .container > p {
+    grid-column: 1 / -1;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 5rem auto;
+    font-size: 1.25rem;
+    color: var(--text-muted);
+}
+
+.package-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(121, 40, 202, 0.1);
+    border-radius: 24px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-purple);
+    box-shadow: 0 20px 40px rgba(121, 40, 202, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Premium Highlight */
+.package-card:nth-child(3) {
+    border-color: rgba(121, 40, 202, 0.3);
+    background: rgba(121, 40, 202, 0.05);
+}
+
+.package-card:nth-child(3)::before {
+    content: 'AM BELIEBTESTEN';
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background: var(--accent-purple);
+    color: white;
+    padding: 5px 40px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transform: rotate(45deg);
+}
+
+.package-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.package-card p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.package-card p strong {
+    color: var(--accent-purple);
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.package-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 3rem 0;
+    flex-grow: 1;
+}
+
+.package-card li {
+    padding-left: 2rem;
+    position: relative;
+    margin-bottom: 1.2rem;
+    color: var(--text-main);
+    font-size: 1.05rem;
+}
+
+.package-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-purple);
+    font-weight: 700;
+}
+
+.package-card .price {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-top: auto;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(121, 40, 202, 0.1);
+    text-align: center;
+}
+
+/* Responsive Packages */
+@media (max-width: 1024px) {
+    .preset-packages .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .preset-packages .container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .package-card {
+        padding: 2.5rem;
+    }
+}
