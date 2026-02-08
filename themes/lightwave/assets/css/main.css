@@ -360,6 +360,10 @@ section {
 
 /* Timeline Section */
 .preset-timeline {
+    --timeline-width: 4px;
+    --timeline-marker-size: 46px;
+    --timeline-marker-center: calc(var(--timeline-marker-size) / 2);
+
     background: var(--bg-light);
     padding: 10rem 0;
     overflow: visible;
@@ -390,11 +394,9 @@ section {
     content: '';
     position: absolute;
     left: 50%;
-    top: calc(2rem + 23px);
-    /* Center of first circle */
-    bottom: calc(2rem + 23px);
-    /* Center of last circle area */
-    width: 2px;
+    top: calc(2rem + var(--timeline-marker-center));
+    bottom: calc(2rem + var(--timeline-marker-center));
+    width: var(--timeline-width);
     background: rgba(121, 40, 202, 0.1);
     transform: translateX(-50%);
     z-index: 1;
@@ -404,10 +406,9 @@ section {
     content: '';
     position: absolute;
     left: 50%;
-    top: calc(2rem + 23px);
-    width: 2px;
-    max-height: calc(100% - 4rem - 46px);
-    /* Distance between first and last circle centers */
+    top: calc(2rem + var(--timeline-marker-center));
+    width: var(--timeline-width);
+    max-height: calc(100% - 4rem - var(--timeline-marker-size));
     height: var(--timeline-progress, 0%);
     background: linear-gradient(to bottom, var(--accent-purple), var(--accent-blue));
     box-shadow: 0 0 15px var(--accent-purple);
@@ -444,8 +445,8 @@ section {
     content: counter(step-counter);
     position: absolute;
     top: 2rem;
-    width: 46px;
-    height: 46px;
+    width: var(--timeline-marker-size);
+    height: var(--timeline-marker-size);
     background: #fff;
     border: 2px solid rgba(121, 40, 202, 0.2);
     border-radius: 50%;
@@ -454,26 +455,32 @@ section {
     justify-content: center;
     font-weight: 700;
     font-size: 1.2rem;
+    line-height: 1;
+    /* Explicit centering */
     color: var(--text-muted);
     z-index: 3;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .preset-timeline li:nth-child(odd)::before {
-    right: -23px;
+    left: 100%;
+    /* Right edge of li is the center line */
+    transform: translateX(-50%);
 }
 
 .preset-timeline li:nth-child(even)::before {
-    left: -23px;
+    left: 0;
+    /* Left edge of li is the center line */
+    transform: translateX(-50%);
 }
 
-/* Active State for Circles */
+/* Active State for Circles - Keep translation when scaling */
 .preset-timeline li.active::before {
     border-color: var(--accent-purple);
     background: var(--accent-purple);
     color: #fff;
     box-shadow: 0 0 20px rgba(121, 40, 202, 0.4);
-    transform: scale(1.1);
+    transform: translateX(-50%) scale(1.1);
 }
 
 .preset-timeline li strong {
@@ -492,8 +499,11 @@ section {
 
 /* Responsive Timeline */
 @media (max-width: 768px) {
-    .timeline-progress-container {
-        left: 30px;
+
+    .preset-timeline ol::before,
+    .preset-timeline ol::after {
+        left: 30px !important;
+        transform: translateX(-50%) !important;
     }
 
     .preset-timeline li {
@@ -504,8 +514,9 @@ section {
     }
 
     .preset-timeline li::before {
-        left: 7px !important;
+        left: 30px !important;
         right: auto !important;
+        transform: translateX(-50%) !important;
     }
 }
 
