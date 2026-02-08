@@ -394,11 +394,9 @@ section {
     content: '';
     position: absolute;
     left: 50%;
-    /* Start: Top padding of li (2rem) + half of marker size (23px) */
     top: calc(2rem + var(--timeline-marker-center));
-    /* End: Total height - offsets for first and last marker centers */
-    /* ADJUST THIS: Increase the -110px if it's too long, decrease if too short */
-    height: calc(100% - (2 * (2rem + var(--timeline-marker-center))));
+    /* Pixel-perfect length provided by JS */
+    height: var(--timeline-total-length, 0);
     width: var(--timeline-width);
     background: rgba(121, 40, 202, 0.1);
     transform: translateX(-50%);
@@ -411,8 +409,8 @@ section {
     left: 50%;
     top: calc(2rem + var(--timeline-marker-center));
     width: var(--timeline-width);
-    /* Match the track height exactly */
-    max-height: calc(100% - (2 * (2rem + var(--timeline-marker-center))));
+    /* Match the track length exactly */
+    max-height: var(--timeline-total-length, 0);
     height: var(--timeline-progress, 0%);
     background: linear-gradient(to bottom, var(--accent-purple), var(--accent-blue));
     box-shadow: 0 0 15px var(--accent-purple);

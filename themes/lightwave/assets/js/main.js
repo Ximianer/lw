@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('scroll', () => {
             if (timelineItems.length < 2) return;
 
-            const firstMarker = timelineItems[0].querySelector('::before'); // Not targetable directly, use box math
             const markerSize = parseInt(getComputedStyle(timeline).getPropertyValue('--timeline-marker-size')) || 46;
             const markerCenter = markerSize / 2;
             const topOffset = parseFloat(getComputedStyle(timelineItems[0]).paddingTop) + markerCenter;
@@ -40,15 +39,19 @@ document.addEventListener('DOMContentLoaded', () => {
             let progress = (centerPoint - startY) / (endY - startY);
             progress = Math.max(0, Math.min(1, progress));
 
+            // Set total length for the track to stop exactly at the last circle center
+            const totalPixels = endY - startY;
+            timelineList.style.setProperty('--timeline-total-length', `${totalPixels}px`);
             timelineList.style.setProperty('--timeline-progress', `${progress * 100}%`);
 
-            // Activate markers based on their position relative to the viewport center
+            // Activate markers based on their relative progress
+            // A marker should activate the moment the line (which moves with scroll) reaches its center
             timelineItems.forEach((item, index) => {
                 const itemRect = item.getBoundingClientRect();
-                const itemCenter = itemRect.top + itemRect.height / 2;
+                const itemCenter = itemRect.top + topOffset;
 
-                // Activate if the item's center is above the viewport's 60% mark
-                if (itemCenter < viewHeight * 0.6) {
+                // If the viewport center is at or below the item's center, it's "reached"
+                if (centerPoint >= itemCenter) {
                     item.classList.add('active');
                 } else {
                     item.classList.remove('active');
