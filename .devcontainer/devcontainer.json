@@ -1,0 +1,45 @@
+{
+	"name": "Hugo Development",
+	"dockerFile": "Dockerfile",
+	"context": "..",
+	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {},
+	
+	// Use 'postCreateCommand' to run commands after the container is created
+	"postCreateCommand": "hugo version && git config --global --add safe.directory /workspace",
+	
+	// Configure environment variables
+	"remoteEnv": {
+		"HUGO_ENV": "development"
+	},
+	
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "root",
+	
+	// Forward ports for Hugo development server
+	"forwardPorts": [1313],
+	"portsAttributes": {
+		"1313": {
+			"label": "Hugo Server",
+			"onAutoForward": "notify"
+		}
+	},
+	
+	// Customize extensions installed in the dev container
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.remote-explorer",
+				"eamodio.gitlens",
+				"budparr.language-hugo-vscode"
+			],
+			"settings": {
+				"[markdown]": {
+					"editor.defaultFormatter": "esbenp.prettier-vscode",
+					"editor.formatOnSave": true
+				}
+			}
+		}
+	}
+}
