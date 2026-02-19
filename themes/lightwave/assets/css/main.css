@@ -413,7 +413,7 @@ section {
     width: var(--timeline-width);
     /* Match the track length exactly */
     max-height: var(--timeline-total-length, 0);
-    height: var(--timeline-progress, 0%);
+    height: var(--timeline-progress, 0);
     background: linear-gradient(to bottom, var(--accent-purple), var(--accent-blue));
     box-shadow: 0 0 15px var(--accent-purple);
     transform: translateX(-50%);

@@ -23,32 +23,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const markerSize = parseInt(getComputedStyle(timeline).getPropertyValue('--timeline-marker-size')) || 46;
             const markerCenter = markerSize / 2;
-            const topOffset = parseFloat(getComputedStyle(timelineItems[0]).paddingTop) + markerCenter;
 
             const firstMarkerRect = timelineItems[0].getBoundingClientRect();
             const lastMarkerRect = timelineItems[timelineItems.length - 1].getBoundingClientRect();
+
+            // The absolute top of the first circle and last circle in the viewport
+            // padding-top + markerCenter gives the vertical center of the circle within the li
+            const firstMarkerCenter = firstMarkerRect.top + parseFloat(getComputedStyle(timelineItems[0]).paddingTop) + markerCenter;
+            const lastMarkerCenter = lastMarkerRect.top + parseFloat(getComputedStyle(timelineItems[timelineItems.length - 1]).paddingTop) + markerCenter;
 
             const viewHeight = window.innerHeight;
             const centerPoint = viewHeight * 0.5;
 
             // scrollStart: when first marker center is at viewport center
-            const startY = firstMarkerRect.top + topOffset;
+            const startY = firstMarkerCenter;
             // scrollEnd: when last marker center is at viewport center
-            const endY = lastMarkerRect.top + topOffset;
+            const endY = lastMarkerCenter;
 
-            let progress = (centerPoint - startY) / (endY - startY);
-            progress = Math.max(0, Math.min(1, progress));
+            // The total length of the track is from the center of the first marker to the center of the last marker
+            const totalTrackLength = endY - startY;
+            
+            // The progress of the bar should be exactly how far the centerPoint has traveled past startY
+            let progressPixels = centerPoint - startY;
+            progressPixels = Math.max(0, Math.min(totalTrackLength, progressPixels));
 
-            // Set total length for the track to stop exactly at the last circle center
-            const totalPixels = endY - startY;
-            timelineList.style.setProperty('--timeline-total-length', `${totalPixels}px`);
-            timelineList.style.setProperty('--timeline-progress', `${progress * 100}%`);
+            timelineList.style.setProperty('--timeline-total-length', `${totalTrackLength}px`);
+            timelineList.style.setProperty('--timeline-progress', `${progressPixels}px`);
 
             // Activate markers based on their relative progress
             // A marker should activate the moment the line (which moves with scroll) reaches its center
             timelineItems.forEach((item, index) => {
                 const itemRect = item.getBoundingClientRect();
-                const itemCenter = itemRect.top + topOffset;
+                const itemCenter = itemRect.top + parseFloat(getComputedStyle(item).paddingTop) + markerCenter;
 
                 // If the viewport center is at or below the item's center, it's "reached"
                 if (centerPoint >= itemCenter) {
