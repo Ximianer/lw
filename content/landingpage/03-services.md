@@ -8,13 +8,12 @@ anchor: "services"
 
 ## Elevate Your <span class="text-accent-blue">Event</span>
 
-Wir bieten erstklassige Audio- und Lichtlösungen für Events jeder Größe. Von intimen Firmenfeiern bis hin zu großen Open-Air-Festivals.
+Erstklassige Audio- und Lichtlösungen für unvergessliche Momente. Ob privater Geburtstag oder traumhafte Hochzeit – wir haben das passende Equipment für jedes Event.
 
-### Sound Systems
-Kristallklarer Sound für jede Location. Wir nutzen modernste Technik von L-Acoustics und d&b audiotechnik.
+### Equipment
+Technik, die überzeugt. Bei uns kommt nur Profi-Equipment zum Einsatz. Mit Marken wie Pioneer und t.bone sorgen wir für den richtigen Beat auf deinem Event.
 
 ### Lighting Design
-Atmosphärische Beleuchtung, die Ihre Marke ins rechte Licht rückt. Mit intelligenten Lichtsystemen und kreativen Konzepten.
-
+Licht, das bewegt. Von dezentem Ambient-Light bis zur fulminanten Party-Beleuchtung – wir machen deine Feier zu einem optischen Highlight.
 ### Event Production
 Full-Service Planung von der ersten Idee bis zum letzten Abbau. Wir kümmern uns um die Technik, damit Sie sich auf Ihre Gäste konzentrieren können.

@@ -14,6 +14,13 @@ Wähle das perfekte Setup für dein Event. Unsere Pakete sind als Orientierung g
   - Basic Lichteffekt für die Tanzfläche
   - Inkl. Auf- und Abbau
   - **Preis: ab 590€**
+  - {{< email-button text="Jetzt Buchen" recipient="info@lighwave.de" subject="Anfrage - Essentials Paket" body=`Hallo,
+
+ich möchte das Essentials Paket buchen.
+
+Bitte senden Sie mir weitere Informationen und ein Angebot.
+
+Mit freundlichen Grüßen` >}}
 - ### Premium
   **Das Rundum-sorglos-Paket für Club-Feeling**
   - Professioneller DJ (Open End Option)
@@ -22,6 +29,13 @@ Wähle das perfekte Setup für dein Event. Unsere Pakete sind als Orientierung g
   - **Inkl. Lichttechniker** für Live-Show
   - Ambiente-Beleuchtung (Up-Lighting)
   - **Preis: ab 950€**
+  - {{< email-button text="Jetzt Buchen" recipient="info@lighwave.de" subject="Anfrage - Premium Paket" body=`Hallo,
+
+ich möchte das Premium Paket buchen.
+
+Bitte senden Sie mir weitere Informationen und ein Angebot.
+
+Mit freundlichen Grüßen` >}}
 - ### Ultimate
   **Maximale Licht-Power & Individualität**
   - Alles aus Premium
@@ -30,5 +44,12 @@ Wähle das perfekte Setup für dein Event. Unsere Pakete sind als Orientierung g
   - Individuelles Licht-Konzept & Musik-Vorauswahl
   - Fotobox-Option inkl.
   - **Preis: auf Anfrage**
+  - {{< email-button text="Jetzt Buchen" recipient="info@lighwave.de" subject="Anfrage - Ultimate Paket" body=`Hallo,
+
+ich möchte das Ultimate Paket buchen.
+
+Bitte senden Sie mir weitere Informationen und ein Angebot.
+
+Mit freundlichen Grüßen` >}}
 
 Wir beraten dich gerne persönlich, um das ideale Paket für deine Location und Gästezahl zusammenzustellen.

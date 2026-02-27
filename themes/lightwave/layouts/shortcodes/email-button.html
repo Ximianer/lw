@@ -1,0 +1,15 @@
+{{ $text := .Get "text" | default "Jetzt Buchen" }}
+{{ $recipient := .Get "recipient" | default "info@lighwave.de" }}
+{{ $subject := .Get "subject" | default "Anfrage" }}
+{{ $body := .Get "body" | default "Hallo,\n\nich hätte Interesse an Ihrer Dienstleistung.\n\nMit freundlichen Grüßen" }}
+
+{{/* 1. urlquery encodes the string (turning spaces to +)
+     2. replace turns those + signs into %20 
+*/}}
+{{ $encodedSubject := $subject | urlquery | replaceRE `\+` "%20" }}
+{{ $encodedBody := $body | urlquery | replaceRE `\+` "%20" }}
+
+{{/* Create the mailto link */}}
+{{ $mailtoLink := printf "mailto:%s?subject=%s&body=%s" $recipient $encodedSubject $encodedBody }}
+
+<a href="{{ $mailtoLink | safeURL }}" class="email-button">{{ $text }}</a>
