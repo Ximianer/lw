@@ -1,35 +1,36 @@
 ---
 title: "Impressum"
-date: 2026-02-07
+date: 2026-03-14
 draft: false
 layout: "single"
 ---
 
 ## Angaben gemäß § 5 TMG
 
-Lightwave Music & Events GbR
-Musterstraße 123
-80331 München
+Lightwave Music & Events
+<div style="page-break-after: always;"></div>
+Olympiastraße 8B
+
+<div style="page-break-after: always;"></div>
+85622 Feldkirchen
 
 **Vertreten durch:**
-Maximilian Muster
-Hendrik Beispiel
+<div style="page-break-after: always;"></div>
+Maximilian Schneider
+<div style="page-break-after: always;"></div>
+Hendrik Schneider
 
 ## Kontakt
 
-Telefon: +49 89 123 456 78
-E-Mail: bookings@lightwave-music.de
-
-## Umsatzsteuer-ID
-
-Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
-DE123456789
+lightwave2022@outlook.de
 
 ## Redaktionell verantwortlich
-
-Maximilian Muster
-Musterstraße 123
-80331 München
+<div style="page-break-after: always;"></div>
+Maximilian Schneider
+<div style="page-break-after: always;"></div>
+Olympiastraße 8B
+<div style="page-break-after: always;"></div>
+85622 Feldkirchen
 
 ## EU-Streitschlichtung
 

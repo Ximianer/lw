@@ -5,7 +5,7 @@ anchor: "pakete"
 weight: 50
 ---
 
-Wähle das perfekte Setup für dein Event. Unsere Pakete sind als Orientierung gedacht und können jederzeit individuell an deine Wünsche angepasst werden.
+Wählen Sie das perfekte Setup für Ihr Event. Unsere Pakete sind als Orientierung gedacht und können jederzeit individuell an Ihre Wünsche angepasst werden.
 
 - ### Essentials
   **Der perfekte Sound für kleinere Runden**
@@ -13,14 +13,23 @@ Wähle das perfekte Setup für dein Event. Unsere Pakete sind als Orientierung g
   - Hochwertiges 2.1 Soundsystem
   - Basic Lichteffekt für die Tanzfläche
   - Inkl. Auf- und Abbau
-  - **Preis: ab 590€**
-  - {{< email-button text="Jetzt Buchen" recipient="info@lighwave.de" subject="Anfrage - Essentials Paket" body=`Hallo,
+  - **Preis: auf Anfrage**
+  - {{< email-button text="Jetzt Buchen" recipient="lightwave2022@outlook.de" subject="Buchungsanfrage: Essentials Paket am [Datum einfügen]" body=`Hallo,
 
-ich möchte das Essentials Paket buchen.
+ich interessiere mich für euer Essentials Paket für meine Feier. Bitte prüft die Verfügbarkeit für folgenden Termin:
 
-Bitte senden Sie mir weitere Informationen und ein Angebot.
+Datum der Feier: [Datum einfügen]
 
-Mit freundlichen Grüßen` >}}
+Anlass: [z.B. Geburtstag / Privatparty]
+
+Ort / Location: [Name oder Ort der Location]
+
+Geschätzte Gästeanzahl: [Anzahl] Personen
+
+Könntet ihr mir hierfür ein unverbindliches Angebot zusenden?
+
+Beste Grüße,
+[Name des Kunden]` >}}
 - ### Premium
   **Das Rundum-sorglos-Paket für Club-Feeling**
   - Professioneller DJ (Open End Option)
@@ -28,14 +37,24 @@ Mit freundlichen Grüßen` >}}
   - 4 computergesteuerte Moving Heads
   - **Inkl. Lichttechniker** für Live-Show
   - Ambiente-Beleuchtung (Up-Lighting)
-  - **Preis: ab 950€**
-  - {{< email-button text="Jetzt Buchen" recipient="info@lighwave.de" subject="Anfrage - Premium Paket" body=`Hallo,
+  - **Preis: auf Anfrage**
+  - {{< email-button text="Jetzt Buchen" recipient="lightwave2022@outlook.de" subject="Anfrage Premium-Setup für unser Event am [Datum]" body=`Sehr geehrtes Team,
 
-ich möchte das Premium Paket buchen.
+wir planen ein Event und interessieren uns für euer Premium Paket (inkl. Open-End DJ und Ambiente-Beleuchtung). Hier sind unsere Eckdaten:
 
-Bitte senden Sie mir weitere Informationen und ein Angebot.
+Datum: [Datum einfügen]
 
-Mit freundlichen Grüßen` >}}
+Art des Events: [z.B. Hochzeit / Firmenfeier]
+
+Location: [Name der Location & PLZ]
+
+Gästeanzahl: ca. [Anzahl] Personen (bis max. 150)
+
+Bitte lasst uns wissen, ob der Termin noch frei ist und sendet uns ein entsprechendes Angebot zu.
+
+Herzliche Grüße,
+[Name des Kunden]
+[Telefonnummer für Rückfragen]` >}}
 - ### Ultimate
   **Maximale Licht-Power & Individualität**
   - Alles aus Premium
@@ -44,12 +63,24 @@ Mit freundlichen Grüßen` >}}
   - Individuelles Licht-Konzept & Musik-Vorauswahl
   - Fotobox-Option inkl.
   - **Preis: auf Anfrage**
-  - {{< email-button text="Jetzt Buchen" recipient="info@lighwave.de" subject="Anfrage - Ultimate Paket" body=`Hallo,
+  - {{< email-button text="Jetzt Buchen" recipient="lightwave2022@outlook.de" subject="Exklusive Buchungsanfrage: Ultimate Paket für den [Datum einfügen]" body=`Hallo zusammen,
 
-ich möchte das Ultimate Paket buchen.
+für unser geplantes Event am [Datum einfügen] möchten wir keine Kompromisse machen und interessieren uns für das Ultimate Paket.
 
-Bitte senden Sie mir weitere Informationen und ein Angebot.
+Besonders die Licht-Traverse, das individuelle Musik-Konzept und die Fotobox-Option sind für uns relevant. Hier die Details zur Planung:
 
-Mit freundlichen Grüßen` >}}
+Datum: [Datum einfügen]
 
-Wir beraten dich gerne persönlich, um das ideale Paket für deine Location und Gästezahl zusammenzustellen.
+Event-Typ: [z.B. Große Hochzeit / Gala / Firmenevent]
+
+Location: [Name der Location & Ort]
+
+Erwartete Gäste: [Anzahl] Personen
+
+Wir freuen uns auf ein individuelles Angebot von euch, um die Details zu besprechen.
+
+Beste Grüße,
+[Name des Kunden]
+[Telefonnummer für Rückfragen]` >}}
+
+Wir beraten Sie gerne persönlich, um das ideale Paket für Ihre Location und Gästezahl zusammenzustellen.

@@ -8,10 +8,8 @@ anchor: "contact"
 
 ## Ready to <span class="text-accent-purple">Light Up</span> the Night?
 
-**Email:** bookings@lightwave-music.de
-
-**Phone:** +49 89 123 456 78
+**Email:** lightwave2022@outlook.de
 
 **Office:** Munich, Germany
 
-[Send Inquiry](mailto:bookings@lightwave-music.de)
+[Send Inquiry](mailto:lightwave2022@outlook.de)
