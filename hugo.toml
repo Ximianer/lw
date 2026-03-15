@@ -1,4 +1,4 @@
-baseURL = 'https://sesceu.github.io/lw/'
+baseURL = 'https://lightwave.show/'
 languageCode = 'de-de'
 title = 'Lightwave'
 theme = 'lightwave'
@@ -11,6 +11,9 @@ theme = 'lightwave'
   description = "A premium Hugo site for Lightwave Music & Event Company."
   author = "Lightwave Team"
   logo = "img/lightwave_logo.svg"
+
+[params.contact]
+  email = "info@lightwave.show"
 
 [markup]
   [markup.goldmark]

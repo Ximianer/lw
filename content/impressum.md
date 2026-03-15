@@ -7,30 +7,26 @@ layout: "single"
 
 ## Angaben gemäß § 5 TMG
 
-Lightwave Music & Events
-<div style="page-break-after: always;"></div>
-Olympiastraße 8B
+**Lightwave Music & Events**
 
-<div style="page-break-after: always;"></div>
+Hendrik Schneider<br />
+**Vertreten durch den Erziehungsberechtigten:**<br />
+Christian Schneider<br />
+Oberndorfer Str. 1E<br />
 85622 Feldkirchen
 
-**Vertreten durch:**
-<div style="page-break-after: always;"></div>
-Maximilian Schneider
-<div style="page-break-after: always;"></div>
-Hendrik Schneider
+Maximilian Schneider<br />
+**Vertreten durch den Erziehungsberechtigten:**<br />
+Sebastian Schneider<br />
+Olympiastr. 8B<br />
+85622 Feldkirchen
 
 ## Kontakt
 
-lightwave2022@outlook.de
+[{{< param "contact.email" >}}](mailto:{{< param "contact.email" >}})
 
 ## Redaktionell verantwortlich
-<div style="page-break-after: always;"></div>
 Maximilian Schneider
-<div style="page-break-after: always;"></div>
-Olympiastraße 8B
-<div style="page-break-after: always;"></div>
-85622 Feldkirchen
 
 ## EU-Streitschlichtung
 

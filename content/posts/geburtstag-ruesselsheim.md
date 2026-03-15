@@ -1,5 +1,5 @@
 ---
-title: "Geburtstag - Mannheim"
+title: "Geburtstag - Rüsselsheim"
 date: 2025-07-06
 image: "img/signal-2026-03-14-130938.jpeg"
 ---
