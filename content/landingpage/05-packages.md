@@ -6,15 +6,15 @@ weight: 50
 ---
 
 Wählen Sie das perfekte Setup für Ihr Event. Unsere Pakete sind als Orientierung gedacht und können jederzeit individuell an Ihre Wünsche angepasst werden.
-
+ 
 - ### Essentials
   **Der perfekte Sound für kleinere Runden**
-  - Professioneller DJ für bis zu 6 Stunden
+  - Professioneller DJ
   - Hochwertiges 2.1 Soundsystem
-  - Basic Lichteffekt für die Tanzfläche
+  - Basic Lichteffekt für die Bühne oder Tanzfläche
   - Inkl. Auf- und Abbau
   - **Preis: auf Anfrage**
-  - {{< email-button text="Jetzt Buchen" recipient="lightwave2022@outlook.de" subject="Buchungsanfrage: Essentials Paket am [Datum einfügen]" body=`Hallo,
+  - {{< email-button text="Jetzt Buchen" recipientKey="contact.email" subject="Buchungsanfrage: Essentials Paket am [Datum einfügen]" body=`Hallo,
 
 ich interessiere mich für euer Essentials Paket für meine Feier. Bitte prüft die Verfügbarkeit für folgenden Termin:
 
@@ -32,13 +32,13 @@ Beste Grüße,
 [Name des Kunden]` >}}
 - ### Premium
   **Das Rundum-sorglos-Paket für Club-Feeling**
-  - Professioneller DJ (Open End Option)
+  - Professioneller DJ
   - Erweitertes Soundsystem für bis zu 150 Personen
-  - 4 computergesteuerte Moving Heads
+  - Computergesteuerte Moving-Heads
   - **Inkl. Lichttechniker** für Live-Show
   - Ambiente-Beleuchtung (Up-Lighting)
   - **Preis: auf Anfrage**
-  - {{< email-button text="Jetzt Buchen" recipient="lightwave2022@outlook.de" subject="Anfrage Premium-Setup für unser Event am [Datum]" body=`Sehr geehrtes Team,
+  - {{< email-button text="Jetzt Buchen" recipientKey="contact.email" subject="Anfrage Premium-Setup für unser Event am [Datum]" body=`Sehr geehrtes Team,
 
 wir planen ein Event und interessieren uns für euer Premium Paket (inkl. Open-End DJ und Ambiente-Beleuchtung). Hier sind unsere Eckdaten:
 
@@ -63,7 +63,7 @@ Herzliche Grüße,
   - Individuelles Licht-Konzept & Musik-Vorauswahl
   - Fotobox-Option inkl.
   - **Preis: auf Anfrage**
-  - {{< email-button text="Jetzt Buchen" recipient="lightwave2022@outlook.de" subject="Exklusive Buchungsanfrage: Ultimate Paket für den [Datum einfügen]" body=`Hallo zusammen,
+  - {{< email-button text="Jetzt Buchen" recipientKey="contact.email" subject="Exklusive Buchungsanfrage: Ultimate Paket für den [Datum einfügen]" body=`Hallo zusammen,
 
 für unser geplantes Event am [Datum einfügen] möchten wir keine Kompromisse machen und interessieren uns für das Ultimate Paket.
 
