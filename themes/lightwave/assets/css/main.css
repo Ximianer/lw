@@ -273,27 +273,33 @@ section {
     margin: 0 auto 3rem;
     color: var(--text-muted);
 }
-
 .preset-hero a {
     display: inline-block;
     padding: 1.2rem 2.5rem;
+    margin: 0.2rem 0rem;
     text-decoration: none;
     font-weight: 700;
     border-radius: 50px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-family: var(--font-heading);
     letter-spacing: 0.5px;
-    background: var(--text-dark);
-    color: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    text-align: center;
+    border: 2px solid var(--text-dark); /* Rahmen für beide (wichtig für gleiche Größe) */
 }
 
-.preset-hero a:nth-of-type(2) {
+/* Erster Button: Dunkle Füllung */
+.preset-hero a:first-child {
+    background: var(--text-dark);
+    color: #fff;
+}
+
+/* Letzter Button: Keine Füllung (Outline) */
+.preset-hero a:last-child {
     background: transparent;
-    border: 2px solid var(--text-dark);
     color: var(--text-dark);
-    margin-left: 1rem;
-    box-shadow: none;
+    box-shadow: none; /* Optional: Schatten entfernen für cleanen Look */
 }
 
 .preset-hero a:hover {
@@ -990,6 +996,8 @@ section {
     padding: 0;
     margin: 0 0 2.5rem 0;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .preset-packages .container > ul > li > ul > li {
@@ -1011,7 +1019,7 @@ section {
 /* Fix for List Items containing the Email Button */
 .preset-packages .container > ul > li > ul > li:has(.email-button) {
     padding-left: 0;
-    margin-top: 1.5rem;
+    margin-top: auto;
     display: flex;
     justify-content: center;
 }

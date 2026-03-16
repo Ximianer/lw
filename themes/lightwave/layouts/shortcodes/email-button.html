@@ -1,5 +1,19 @@
-{{ $text := .Get "text" | default "Jetzt Buchen" }}
-{{ $recipient := .Get "recipient" | default "info@lighwave.de" }}
+{{ $text := .Get "text" | default "Jetzt Anfragen" }}
+{{ $recipient := .Get "recipient" | default "info@lightwave.show" }}
+{{ $recipientKey := .Get "recipientKey" }}
+{{ if $recipientKey }}
+  {{ $keys := split $recipientKey "." }}
+  {{ $recipient = .Site.Params }}
+  {{ range $k := $keys }}
+    {{ $recipient = index $recipient $k }}
+  {{ end }}
+  {{ if not $recipient }}
+    {{ $recipient = .Page.Params }}
+    {{ range $k := $keys }}
+      {{ $recipient = index $recipient $k }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 {{ $subject := .Get "subject" | default "Anfrage" }}
 {{ $body := .Get "body" | default "Hallo,\n\nich hätte Interesse an Ihrer Dienstleistung.\n\nMit freundlichen Grüßen" }}
 

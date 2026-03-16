@@ -8,8 +8,8 @@ anchor: "contact"
 
 ## Ready to <span class="text-accent-purple">Light Up</span> the Night?
 
-**Email:** lightwave2022@outlook.de
+**Email:** {{< param "contact.email" >}}
 
-**Office:** Munich, Germany
+**Office:** Feldkirchen bei München
 
-[Send Inquiry](mailto:lightwave2022@outlook.de)
+[Anfrage](mailto:{{< param "contact.email" >}})

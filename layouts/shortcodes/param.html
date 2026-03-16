@@ -1,0 +1,13 @@
+{{ $key := .Get 0 }}
+{{ $keys := split $key "." }}
+{{ $value := .Site.Params }}
+{{ range $k := $keys }}
+  {{ $value = index $value $k }}
+{{ end }}
+{{ if not $value }}
+  {{ $value = .Page.Params }}
+  {{ range $k := $keys }}
+    {{ $value = index $value $k }}
+  {{ end }}
+{{ end }}
+{{ $value }}

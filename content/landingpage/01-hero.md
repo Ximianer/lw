@@ -9,5 +9,5 @@ logo: "img/lightwave_logo.svg"
 
 High-End Music & Event Solutions
 
-[Book an Event](#contact)
-[Our Services](#services)
+[Leistungen](#services)
+[Anfrage](#contact)
