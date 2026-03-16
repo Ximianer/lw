@@ -12,7 +12,7 @@ Erstklassige Audio- und Lichtlösungen für unvergessliche Momente. Ob privater 
 
 ### Equipment
 
-Technik, die überzeugt. Bei uns kommt nur Profi-Equipment zum Einsatz. Mit Marken wie Pioneer und Fun Generation sorgen wir für den richtigen Beat auf jedem Event.
+Technik, die überzeugt. Bei uns kommt nur Profi-Equipment zum Einsatz. Mit Marken wie Pioneer und T.Bone sorgen wir für den richtigen Beat auf jedem Event.
 
 ### Lighting Design
 
